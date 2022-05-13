@@ -1,0 +1,14 @@
+.footer__container {
+	padding-top: 65px;
+	@include tablet {
+		padding-top: 94px;
+	}
+}
+.privacy {
+	&__text {
+		font-size: 14px;
+		line-height: 1.43;
+		color: rgba(255, 255, 255, 1);
+		padding: 20px 0px 72px 31px;
+	}
+}

@@ -1,0 +1,45 @@
+.animated {
+	font-size: 44px;
+	width: 100%;
+	line-height: 1.2;
+	color: $mainColor;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+	@include tablet {
+		font-size: 46px;
+		line-height: 1.39;
+	}
+	@include bigTablet {
+		font-size: 42px;
+		line-height: 1.1;
+	}
+	@include desktop {
+		width: 587px;
+		font-size: 46px;
+		line-height: 1.39;
+	}
+	&__text_begin:after {
+		content: "english";
+		animation: slide 7s infinite 0s;
+	}
+}
+
+@keyframes slide {
+	0% {
+		content: "english";
+	}
+	15% {
+		content: "english";
+	}
+	25% {
+		content: "spanish";
+	}
+	50% {
+		content: "chineese";
+	}
+	75% {
+		content: "french";
+	}
+	100% {
+		content: "german";
+	}
+}

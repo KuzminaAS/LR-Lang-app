@@ -1,0 +1,59 @@
+.slider {
+	&__img {
+		text-align: center;
+	}
+	&__img img {
+		border-radius: 48px;
+		max-width: 100%;
+	}
+	&__arrows {
+		display: grid;
+		grid-template-columns: repeat(2, 58px);
+		column-gap: 24px;
+		transition: all 0.3s ease 0s;
+		justify-content: center;
+		align-items: center;
+		z-index: 3;
+
+		margin-top: 20px;
+
+		@include bigTablet {
+			margin-top: -110px;
+		}
+		@include desktop {
+			margin-top: 32px;
+		}
+	}
+	&-arrow {
+		height: 56px;
+		width: 56px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		&_left {
+			background-image: url(../../img/icons/icon-arrow-left.svg);
+		}
+		&_right {
+			background-image: url(../../img/icons/icon-arrow-right.svg);
+		}
+	}
+}
+
+.swiper {
+	width: 280px;
+	height: 100%;
+	@include bigMobile {
+		width: 400px;
+	}
+	@include tablet {
+		width: 550px;
+	}
+	@include bigTablet {
+		width: 500px;
+		margin-top: -115px;
+	}
+	@include desktop {
+		width: 616px;
+		height: 460px;
+	}
+}

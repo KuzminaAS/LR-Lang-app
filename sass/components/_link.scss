@@ -1,0 +1,19 @@
+.link {
+	position: relative;
+	background: linear-gradient(258.3deg, #6a42f8 0%, #d375e0 97.45%);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+	border-radius: 10px;
+	padding: 23px 24px;
+	display: inline-flex;
+	align-items: center;
+	z-index: 4;
+}
+.link__icon {
+	display: inline-block;
+	width: 37px;
+	height: 32px;
+	background-image: url(../../img/icons/icon-google.svg);
+}
+.link__text {
+	padding-left: 16px;
+}

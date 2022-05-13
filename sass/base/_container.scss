@@ -1,0 +1,38 @@
+._container {
+	max-width: 320px;
+	padding: 0 20px;
+	margin: 0 auto;
+
+	@include bigMobile {
+		max-width: 540px;
+	}
+	@include tablet {
+		max-width: 600px;
+		padding: 0 10px;
+	}
+	@include bigTablet {
+		max-width: 892px;
+		padding: 0 15px;
+	}
+	@include desktop {
+		max-width: 1294px;
+	}
+}
+.wrapper {
+	padding-top: 65px;
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+
+	@include tablet {
+		padding-top: 75px;
+	}
+	@include bigTablet {
+		padding-top: 85px;
+	}
+	@include desktop {
+		padding-top: 130.59px;
+	}
+}
